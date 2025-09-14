@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Artic Interior — Custom Comfort, Timeless Design</title>
+  <meta name="description" content="Artic Interior — upholstery, curtains, blinds, custom furniture, rework services." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#1f6feb;
+      --muted:#6b7280;
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --radius:12px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    header{background:linear-gradient(90deg,rgba(31,111,235,0.06),transparent);backdrop-filter: blur(2px)}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Nav */
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#0ea5a4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0}
+    nav a{color:inherit;text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:44px 0}
+    .hero-grid{display:grid;grid-template-columns:1fr;gap:24px}
+    .hero-card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .hero h1{font-size:32px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted)}
+    .hero-visual{min-height:240px;border-radius:12px;background-image:linear-gradient(135deg, rgba(31,111,235,0.06), rgba(14,165,164,0.03));display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+
+    /* Sections */
+    section{padding:28px 0}
+    h2{font-size:20px;margin:0 0 12px}
+    .grid-3{display:grid;grid-template-columns:repeat(1,1fr);gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .small{color:var(--muted);font-size:14px}
+
+    /* Services */
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .services li{list-style:none}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .thumb{background:linear-gradient(180deg,#fff,#f3f7ff);border-radius:10px;min-height:100px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:18px}
+    form{display:grid;gap:12px}
+    input,textarea,select{padding:12px;border-radius:10px;border:1px solid #e6eef8;font-size:14px}
+    button{padding:12px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:700}
+
+    footer{padding:28px 0;color:var(--muted);font-size:14px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .services{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <div style="font-weight:700">Artic Interior</div>
+          <div class="small">Custom Comfort, Timeless Design</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li style="display:inline-block"><a href="#home">Home</a></li>
+          <li style="display:inline-block"><a href="#services">Services</a></li>
+          <li style="display:inline-block"><a href="#portfolio">Portfolio</a></li>
+          <li style="display:inline-block"><a href="#about">About</a></li>
+          <li style="display:inline-block"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#contact">Get a Quote</a>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <h1>From Upholstery to Interiors — Crafted Just for You.</h1>
+          <p>Transform your home or office with furniture, upholstery, curtains, and blinds designed to suit your lifestyle. At Artic Interior, every piece is crafted with care, comfort, and style.</p>
+          <p style="margin-top:16px"><strong>Services:</strong> Upholstery, Curtains, Blinds, Custom Furniture & Rework Services.</p>
+          <div style="margin-top:18px;display:flex;gap:12px">
+            <a class="cta" href="#services">Explore Services</a>
+            <a style="padding:10px 14px;border-radius:10px;border:1px solid rgba(16,24,40,0.06);text-decoration:none;font-weight:700" href="#portfolio">View Portfolio</a>
+          </div>
+        </div>
+        <div class="hero-visual">Hero image / Portfolio preview (replace with your photo)</div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <h2>About Us</h2>
+          <p class="small">At Artic Interior, we believe interiors should tell your story. We are your one-stop destination for stylish, functional, and customized interior solutions. From modern modular furniture to elegant curtains and blinds, we bring together quality craftsmanship and thoughtful design.</p>
+          <p class="small">Whether it’s a cozy corner in your home or a professional office setup, our team ensures every space reflects beauty, comfort, and practicality.</p>
+        </div>
+        <div style="width:320px">
+          <div class="card small">
+            <strong>Why Choose Artic Interior?</strong>
+            <ul>
+              <li>Customized Products – Tailored to your taste & requirements.</li>
+              <li>Complete Rework Services – Give your old furniture a brand-new life.</li>
+              <li>Durability Meets Style – High-quality materials for long-lasting use.</li>
+              <li>Affordable Luxury – Premium designs at prices you can trust.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Products & Services</h2>
+      <div class="services">
+        <div class="card">
+          <h3>🛋️ Upholstery Works</h3>
+          <p class="small">Fabric & rexine full-cover sofas, custom sofa sets, sofa repairs & reworks.</p>
+        </div>
+        <div class="card">
+          <h3>🪟 Curtains & Blinds</h3>
+          <p class="small"><strong>Curtains:</strong> Eyelet curtains, pleated curtains. <br><strong>Blinds:</strong> Roman blinds, roller blinds.</p>
+        </div>
+        <div class="card">
+          <h3>🪑 Custom & Partial Board Furniture</h3>
+          <p class="small">Cupboards & wardrobes; Study & computer tables; Dressing & bedside tables; Pooja & crockery shelves; Office tables & corner stands; Shoe racks & bookshelves; Kitchen cupboards & teapoys.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p class="small">A few examples of our recent work — replace these placeholders with real photos to build trust and show craftsmanship.</p>
+      <div class="gallery" style="margin-top:12px">
+        <div class="thumb">Sofa — Upholstery</div>
+        <div class="thumb">Curtains — Eyelet</div>
+        <div class="thumb">Kitchen Cupboard</div>
+        <div class="thumb">Study Table</div>
+        <div class="thumb">Bedside Table</div>
+        <div class="thumb">Bookshelf</div>
+        <div class="thumb">Wardrobe</div>
+        <div class="thumb">Pooja Shelf</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <div class="contact-grid" style="margin-top:12px">
+        <div class="card">
+          <p class="small"><strong>Visit our showroom</strong><br>Address line 1<br>City, State ZIP</p>
+          <p class="small"><strong>Call us</strong><br>+91 98765 43210</p>
+          <p class="small"><strong>Email</strong><br>hello@articinterior.example</p>
+          <p class="small">Want a custom quote? Tell us a little about your project and we'll get back to you.</p>
+        </div>
+
+        <div class="card">
+          <form action="#" onsubmit="alert('This is a demo form — replace action with your server endpoint.');return false;">
+            <label class="small">Name</label>
+            <input type="text" placeholder="Your name" required>
+            <label class="small">Phone or Email</label>
+            <input type="text" placeholder="Phone or Email" required>
+            <label class="small">Service Interested</label>
+            <select>
+              <option>Upholstery</option>
+              <option>Curtains & Blinds</option>
+              <option>Custom Furniture</option>
+              <option>Rework / Repair</option>
+            </select>
+            <label class="small">Message</label>
+            <textarea rows="4" placeholder="Tell us about your project..."></textarea>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button type="submit">Send Message</button>
+              <a href="tel:+919876543210" style="display:inline-flex;align-items:center;padding:12px;border-radius:10px;border:1px solid rgba(16,24,40,0.06);text-decoration:none">Call Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>Artic Interior</strong>
+        <div class="small">From Upholstery to Interiors — Crafted Just for You.</div>
+      </div>
+      <div class="small">© " + new Date().getFullYear() + " Artic Interior — All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Small helper to set the current year (in case the HTML is viewed directly)
+    (function(){
+      try{
+        const footer = document.querySelector('footer .container .small:last-child');
+        if(footer) footer.textContent = '© ' + new Date().getFullYear() + ' Artic Interior — All rights reserved.';
+      }catch(e){}
+    })();
+  </script>
+</body>
+</html>
